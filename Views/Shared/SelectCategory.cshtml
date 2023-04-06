@@ -1,0 +1,20 @@
+﻿<div>
+
+        please select a category
+        <select name="categoriesList" id="categoriesList">
+            <option value="1">Fish</option>
+            <option value="2">Mammals</option>
+            <option value="3">Birds</option>
+            <option value="4">Reptiles</option>
+
+        </select>
+        <input type="button" value="Search" onclick="ChangeToCategory()" />
+
+    </div>
+    <script>
+        function ChangeToCategory()
+        {
+            let CategoryID = document.getElementById("categoriesList").value;
+            window.location.assign("/Catalog/ShowCategory/" + CategoryID)
+        }
+    </script>

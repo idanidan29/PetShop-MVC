@@ -1,0 +1,54 @@
+﻿@model IEnumerable<PetShop.Models.Category>
+@Html.Partial("MenuBar")
+<html>
+<head>
+
+</head>
+<body>
+    
+    <div class="big-title">
+        <h1>
+            ADMIN SECTION
+            <span>@Html.Partial("SelectCategory")</span>
+        </h1>
+    </div>
+    
+    <div class="center">@Html.ActionLink("Add new animal","NewAnimalPage","Admin",new{},new{@class="link"})</div>
+
+
+    @foreach (var category in Model)
+    {
+        @if (category.animals?.Count > 0)
+        {
+        <div class="category-name">
+            <h1>
+                <span>@category.Name</span>
+            </h1>
+        </div>
+          
+        <div class="flex-container"> 
+                @foreach (var animal in category.animals)
+                {
+                    <h1></h1>
+                    <article class="flex-items article-card">
+                        <div class="small-title"><h1>@animal.Name</h1></div>
+                        <img class="center" src="@animal.Picture" width="100" height="100">
+                        <div class="center">@Html.ActionLink("Animal Page","AnimalPage","Catalog",new{animal.Id},new{@class="link"})</div>
+                        <div class="center">
+                            @Html.ActionLink("Edit","EditPage","Admin",new{animal.Id},new{@class="link"}) 
+                            @Html.ActionLink("Delete","Delete","Admin",new{animal.Id},new{@class="link"})
+                        </div>
+                        
+                    </article>
+                    
+
+                    
+                }
+            </div>
+        }
+
+    }
+</body>
+</html>
+<link rel="stylesheet" href="~/css/StyleSheet.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">

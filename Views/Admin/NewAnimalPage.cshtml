@@ -1,0 +1,61 @@
+﻿@model PetShop.Models.Animal
+@Html.Partial("MenuBar")
+<html>
+    <head></head>
+    <body>
+    
+
+    <div class="big-title">
+        <h1>NEW ANIMAL<span>please complete the folowing details about the animal</span></h1>
+    </div>
+
+
+    <form action="/Admin/CreateNewAnimal" method="post" class="center">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            
+            <div class="form-group">Name:
+                <div><input id="name" name="Name" type="text"/></div>
+                <div class="text-danger">@Html.ValidationMessageFor(model => model.Name)</div>
+                <span id="name-error" class="text-danger"></span>
+                <h1></h1>
+            </div>
+            <div class="form-group">Age:
+                <div><input id="age" type="number" name="Age" /></div>
+                <div class="text-danger">@Html.ValidationMessageFor(model => model.Age)</div>
+                <span id="age-error" class="text-danger"></span>
+                <h1></h1>
+            </div>
+            <div class="form-group">Description:
+            <div><input id="description" name="Description" type="text"/></div>
+                <div class="text-danger">@Html.ValidationMessageFor(model => model.Description)</div>
+                <span id="description-error" class="text-danger"></span>
+                <h1></h1>
+            </div>
+            <div class="form-group">Picture:
+            <div><input id="png-image-address" class="center" type="text" name="Picture" /></div>
+                <div class="text-danger">@Html.ValidationMessageFor(model => model.Picture)</div>
+                <span id="png-image-address-error" class="field-validation-error text-danger"></span>
+                <h1></h1>
+            </div>
+            <div class="form-group">Category
+                <select name="CategoryId" id="CategoryId">
+                    <option value="1">Fish</option>
+                    <option value="2">Mammals</option>
+                    <option value="3">Birds</option>
+                    <option value="4">Reptiles</option>
+                </select>
+                <div class="text-danger">@Html.ValidationMessageFor(model => model.CategoryId)</div>
+                <h1></h1>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create"/>
+            </div>
+    </form>
+   
+    </body>
+</html>
+<script src="~/js/ClientSideValidation.js"></script>
+<link rel="stylesheet" href="~/css/StyleSheet.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+

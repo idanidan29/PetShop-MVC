@@ -1,0 +1,134 @@
+﻿.center {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+    padding: 10px;
+}
+
+.article-card {
+    grid-column-start: auto;
+    grid-column-end: 7;
+    background: #fff;
+    color: #474747;
+    border-radius: 16px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    -webkit-filter: drop-shadow(0 5px 15px rgba(0,0,0,.24));
+    filter: drop-shadow(0 5px 15px rgba(0,0,0,.24));
+    display: flex;
+    flex-direction: column;
+    margin:10px;
+    
+}
+
+article{
+    display: block;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap-reverse;
+}
+.flex-container-colum {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
+}
+.flex-items {
+    margin: 10px;
+}
+
+.comment {
+
+    border: 2px solid #808080;
+    border-radius: 8px;
+    padding: 5px;
+    margin:10px;
+}
+
+    .big-title h1 {
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #222;
+    letter-spacing: 1px;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+}
+    .big-title h1 span {
+        margin-top: 5px;
+        font-size: 15px;
+        color: #444;
+        word-spacing: 1px;
+        font-weight: normal;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        display: grid;
+        grid-template-columns: 1fr max-content 1fr;
+        grid-template-rows: 27px 0;
+        grid-gap: 20px;
+        align-items: center;
+    }
+    .big-title h1 span:after, .big-title h1 span:before {
+        content: " ";
+        display: block;
+        border-bottom: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+        height: 5px;
+        background-color: #f8f8f8;
+        }
+  
+    .small-title h1 {
+        text-align:center;
+        text-transform:uppercase;
+        font-size:26px; letter-spacing:1px;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        grid-template-rows: 16px 0;
+        grid-gap: 22px;
+    }
+    .small-title h1:after,.small-title h1:before {
+        content: " ";
+        display: block;
+        border-bottom: 2px solid #ccc;
+        background-color:#f8f8f8;
+}
+
+    .category-name h1 {
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+}
+    .category-name h1:after {
+            width: 100px;
+            height: 1px;
+            display: block;
+            content: "";
+            position: relative;
+            margin-top: 25px;
+            left: 50%;
+            margin-left: -50px;
+            background-color: #35a016;
+        }
+
+.link:link, .link:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid #808080;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+
+
+
+

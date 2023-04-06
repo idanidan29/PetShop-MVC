@@ -1,0 +1,44 @@
+﻿
+@Html.Partial("MenuBar")
+<html>
+<head>
+
+</head>
+<body>
+   
+    <div class="big-title">
+        <h1>Wecome to PETSHOP.IL<span>Top commented  animals</span></h1>
+    </div>
+
+   
+    <div class="flex-container-colum center">
+    
+        <article  class="article-card" >
+            @if (ViewBag.MostCommented != null)
+            {
+                <div class="small-title"><h1>@ViewBag.MostCommented.Name</h1></div>
+                <img class="center" src="@ViewBag.MostCommented.Picture" width="150" height="150">
+                <p class="center">Description:</p>
+                <div>@ViewBag.MostCommented.Description</div>
+                <div class="center">@ViewBag.NumofComments @ViewBag.MostCommented.comments.Count</div>
+                <a hidden>@Html.ActionLink("Animal Page","AnimalPage","Catalog",new{@ViewBag.MostCommented.Id},new{@class="link"})</a>
+            }
+        </article >
+    
+        <article class="article-card">
+            @if (ViewBag.SecondMostCommented != null)
+            {
+                <div class="small-title"><h1>@ViewBag.SecondMostCommented.Name</h1></div>
+                <img class="center" src="@ViewBag.SecondMostCommented.Picture" width="150" height="150">
+                <p class="center">Description:</p>
+                <div>@ViewBag.SecondMostCommented.Description</div>
+                <div class="center">@ViewBag.NumofComments @ViewBag.SecondMostCommented.comments.Count</div>
+                <a hidden>@Html.ActionLink("Animal Page","AnimalPage","Catalog",new{@ViewBag.SecondMostCommented.Id},new{@class="link"})</a>
+            }
+        </article >
+    
+    </div>
+</body>
+</html>
+<link rel="stylesheet" href="~/css/StyleSheet.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
