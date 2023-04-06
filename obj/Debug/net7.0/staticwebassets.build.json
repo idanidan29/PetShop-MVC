@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "Hash": "RAL8Zwd3wTJDb7B1VkE1r5FPO5CqEzTn6roXIx/SfYU=",
+  "Source": "PetShop",
+  "BasePath": "_content/PetShop",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "PetShop\\wwwroot",
+      "Source": "PetShop",
+      "ContentRoot": "C:\\Users\\29ida\\OneDrive\\Documents\\ASP.net\\PetShop\\PetShop\\wwwroot\\",
+      "BasePath": "_content/PetShop",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\29ida\\OneDrive\\Documents\\ASP.net\\PetShop\\PetShop\\wwwroot\\css\\StyleSheet.css",
+      "SourceId": "PetShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\29ida\\OneDrive\\Documents\\ASP.net\\PetShop\\PetShop\\wwwroot\\",
+      "BasePath": "_content/PetShop",
+      "RelativePath": "css/StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\StyleSheet.css"
+    },
+    {
+      "Identity": "C:\\Users\\29ida\\OneDrive\\Documents\\ASP.net\\PetShop\\PetShop\\wwwroot\\js\\ClientSideValidation.js",
+      "SourceId": "PetShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\29ida\\OneDrive\\Documents\\ASP.net\\PetShop\\PetShop\\wwwroot\\",
+      "BasePath": "_content/PetShop",
+      "RelativePath": "js/ClientSideValidation.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\ClientSideValidation.js"
+    },
+    {
+      "Identity": "C:\\Users\\29ida\\OneDrive\\Documents\\ASP.net\\PetShop\\PetShop\\wwwroot\\js\\CommentClientSideValidation.js",
+      "SourceId": "PetShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\29ida\\OneDrive\\Documents\\ASP.net\\PetShop\\PetShop\\wwwroot\\",
+      "BasePath": "_content/PetShop",
+      "RelativePath": "js/CommentClientSideValidation.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\CommentClientSideValidation.js"
+    }
+  ]
+}

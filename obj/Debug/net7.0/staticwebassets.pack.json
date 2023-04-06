@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\29ida\\OneDrive\\Documents\\ASP.net\\PetShop\\PetShop\\wwwroot\\css\\StyleSheet.css",
+      "PackagePath": "staticwebassets\\css\\StyleSheet.css"
+    },
+    {
+      "Id": "C:\\Users\\29ida\\OneDrive\\Documents\\ASP.net\\PetShop\\PetShop\\wwwroot\\js\\ClientSideValidation.js",
+      "PackagePath": "staticwebassets\\js\\ClientSideValidation.js"
+    },
+    {
+      "Id": "C:\\Users\\29ida\\OneDrive\\Documents\\ASP.net\\PetShop\\PetShop\\wwwroot\\js\\CommentClientSideValidation.js",
+      "PackagePath": "staticwebassets\\js\\CommentClientSideValidation.js"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.PetShop.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.PetShop.props",
+      "PackagePath": "build\\PetShop.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.PetShop.props",
+      "PackagePath": "buildMultiTargeting\\PetShop.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.PetShop.props",
+      "PackagePath": "buildTransitive\\PetShop.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
